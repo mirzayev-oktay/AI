@@ -1,0 +1,30 @@
+.services {
+  padding: 150px 0;
+}
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.services-card {
+  background-color: #f2f2f2c9;
+  padding: 32px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 362px;
+  margin: 0 auto;
+  text-align: center;
+  gap: 30px;
+  img {
+    width: 98px;
+    height: 103px;
+  }
+}
+.services-title {
+  font-weight: 700px;
+  max-width: 302px;
+  font-size: 25px;
+}

@@ -93,9 +93,15 @@
   }
 
   .footer-info,
-  .footer-content,
-  .footer-about {
+  .footer-about,
+  .footer-content {
     align-items: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .footer-wrapper {
+    gap: 80px;
   }
 }

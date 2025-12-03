@@ -1,0 +1,101 @@
+@use "variables" as *;
+
+.footer {
+  padding: 120px 0;
+  background-color: #000d1d;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &-title {
+      color: $primaryColor;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &-subtitle {
+      color: #fff;
+      opacity: 0.6;
+      font-size: 14px;
+      font-weight: 400;
+      max-width: 261px;
+    }
+
+    &-infos {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+
+    h1 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.6;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-about {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    h1 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    p {
+      max-width: 254px;
+      color: #fff;
+      opacity: 0.6;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .footer-info,
+  .footer-content,
+  .footer-about {
+    align-items: center;
+    text-align: center;
+  }
+}
